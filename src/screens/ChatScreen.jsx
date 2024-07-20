@@ -31,15 +31,16 @@ const MOOK_MENSAJES = [
 
 const [mensajeAnterior, mensajeNuevo] = useState('MOOK_MENSAJES')
 
-const handleNuevoMensaje = () => {
+const handleNuevoMensaje = (nuevoMensaje) => {
     e.preventDefault()
-    const nuevoMensaje = {
-        author: 'yo',
-        text: [],
-        day: 'hoy',
-        hour: '13:17',
-        id: 5
-    }
+    setMensajes([...mensajes, { 
+        id: mensajes.length + 1, 
+        texto: nuevoMsj, 
+        autor: "yo", 
+        estado: "entregado", 
+        dia: "hoy", 
+        hora: new Date().toLocaleTimeString() 
+      }]);
 
     mensajeNuevo ([...mensajeAnterior, nuevoMensaje])
 

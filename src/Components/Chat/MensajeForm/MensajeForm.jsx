@@ -3,12 +3,17 @@ import './MensajeForm.css'
 
 
 
-export const MensajeForm = ({handleNuevoMensaje}) => {
+export const MensajeForm = ({handleNuevoMensajeNew}) => {
     const [value, setValue] = useState(' ')
+    const [mensaje, setMensaje] = useState(' ')
 
     const handleChange = (event) => {
         setValue(event.target.value);
-      };     
+      };  
+      
+      const handleNuevoMensaje = (event) => {
+        handleNuevoMensajeNew(value)
+      };  
       
     
 /* cuando el usuario escribe por ejemplo hola, el onChange lo captura y se produce
