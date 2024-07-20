@@ -6,22 +6,18 @@
 }
 
 body{
-    background-color: #F7C3E3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    background-color: antiquewhite;
 }
 
 .chat{
-    height: 600px;
-    width: 400px;
-    background-image: url(./Assets/Images/pink.jpg);
-    border: 3px solid #88004F;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap:10px;
-    overflow: hidden;
     justify-content: space-between;
+    width: 450px;
+    height: 750px;
+    background-image: url(https://i.pinimg.com/736x/6c/5a/e8/6c5ae8c7e3637d509724267a0bc90541.jpg);
+    margin: auto;
+
+    
+
 }

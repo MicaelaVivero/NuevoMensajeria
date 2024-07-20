@@ -4,10 +4,10 @@ import { Mensaje } from '../Mensaje/Mensaje'
 
 export const ListaMensajes = ({mensajesChat}) => {
   return (
-    <div className='mensaje'>
-      {mensajesChat.map((mensaje, index) => 
-        <Mensaje informacion={mensaje} key={index}/>
-      )}
+    <div className='lista_mensaje'>
+    {mensajesChat.map((mensajes, index) =>
+      <Mensaje mensaje={mensajes} key={index}/>
+    )}
     </div>
   )
 }

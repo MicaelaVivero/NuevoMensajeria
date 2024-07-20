@@ -2,20 +2,18 @@ import React from 'react'
 import './ChatHeaderInfo.css'
 
 export const ChatHeaderInfo = () => {
-    return (
-        <section>
-            <nav className='chat-nav'>
-                <div className='user-info'>
-                    <div className='arrow'><i className="bi bi-arrow-left"></i></div>
-                    <div className='profile-pic'><img src="https://i.pinimg.com/236x/a1/96/a5/a196a54547dcab24f0a0e7dfe4e3bb2e.jpg" alt="Imagen del contacto" className='profile-img'/></div>
-                    <div className='username-box'>pepe</div>
-                </div>
-                <div className='call-and-config'>
-                    <div className='videocall'><i className="bi bi-camera-video"></i></div>
-                    <div className='phonecall'><i className="bi bi-telephone"></i></div>
-                    <div className='options'><i className="bi bi-three-dots-vertical"></i></div>
-                </div>
-            </nav>
-        </section>
-    )
+  return (
+    <div className='info_header'>
+        <div className='info_contacto'>
+            <div className='arrow'><i className="bi bi-arrow-left"></i></div>
+            <div className='img_contacto'><img src="./assets/chica.jpg" alt="" /></div>
+            <div className='contacto'>Pepe</div>
+        </div>
+        <div className='secundary_icons'>
+            <div><i className="bi bi-camera-video"></i></div>
+            <div><i className="bi bi-telephone"></i></div>
+            <div><i className="bi bi-three-dots-vertical"></i></div>
+        </div>
+    </div>
+  )
 }

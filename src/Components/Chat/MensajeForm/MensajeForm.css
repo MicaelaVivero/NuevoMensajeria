@@ -5,40 +5,51 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Geologica", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 i{
     color: #8696A0;
 }
 
+
+
 .message-section{
     display: flex;
     flex-direction: row;
-    width: 80vw;
-    height: 8vh;
-    margin-left: 20vw;
-    background-color: #202C33;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #27726B;
+    gap: 10px;
+    padding: 0px 20px;
 }
 
-.message-section .message-hub{
+.message-hub{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    width: 100%;
 }
 
-div .emotes{
-    display: flex;
-    font-size: 25px;
-    align-items: center;
-    padding-left: 20px;
+.message-input{
+    width: 80%;
+    height: 2em;
+    background-color: #4ab6ab;
+    border: none;
+    border-radius: 10px;
 }
+
+.message-input::placeholder {
+    padding-left: 20px;
+    color: white;
+}
+
 
 .message-section .message-hub .message-input{
     margin: 8.5px 0;
     padding: 0 10px;
-    width: 55vw;
     height: 40px;
     color: rgb(255, 255, 255);
     background-color: #2A3942;
@@ -48,26 +59,23 @@ div .emotes{
     outline: none;
 }
 
-div .clipboard{
-    display: flex;
-    font-size: 25px;
-    align-items: center;
-}
 
-div .camera{
+div .icon_input{
     display: flex;
     font-size: 25px;
     align-items: center;
-}
-
-.message-section .audio{
-    display: flex;
-    flex-direction: row;
-    font-size: 25px;
-    margin-right: 100px;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
+    background-color: transparent;
     border: none;
-    background-color: #202C33;
 }
+
+.cam_mic{
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+i{
+    color: white;
+}
+
+

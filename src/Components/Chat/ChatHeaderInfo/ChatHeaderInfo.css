@@ -7,78 +7,43 @@
     color: white;
 }
 
-section{
+.info_header{
     display: flex;
     flex-direction: row;
-    position: sticky;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80vw;
-    height: 8vh;
-    background-color: #202C33;
     justify-content: space-between;
-    margin-left: 20vw;
+    width: 100%;
+    height: 70px;
+    background-color: #27726B;
+    align-items: center;
+    padding: 0px 20px;
 }
 
-nav .arrow{
+.info_contacto{
     display: flex;
     flex-direction: row;
+    justify-content: start;
     align-items: center;
-    font-size: 20px;
-    color: white;
-    padding-right: 10px;
+    gap: 10px;
 }
 
-.chat-nav .profile-pic{
+.secundary_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+.info_header .img_contacto {
     width: 50px;
     height: 50px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     border-radius: 25px;
+    justify-content: center;
 }
 
-.chat-nav .user-info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-img .profile-img{
-    width: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
-div .username-box{
-    display: flex;
-    flex-direction: row;
-    padding-left: 15px;
-}
-
-.chat-nav .call-and-config{
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-span .videocall{
-    display: flex;
-    flex-direction: row;
-}
-
-div .phonecall{
-    display: flex;
-    flex-direction: row;
-}
-
-div .options{
+.img_contacto img{
     display: flex;
     flex-direction: row;
 }

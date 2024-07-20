@@ -4,11 +4,8 @@
     margin: 0;
 }
 
-.main{
+.lista_mensaje{
     display: flex;
     flex-direction: column;
-    margin-left: 20vw;
-    width: 80vw;
-    height: 84vh;
-    background-image: url('https://cdn.wallpapersafari.com/46/27/ZWbv3h.jpg') 
+    justify-content: start;
 }
