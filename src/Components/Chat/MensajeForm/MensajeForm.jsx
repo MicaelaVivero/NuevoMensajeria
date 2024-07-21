@@ -11,7 +11,7 @@ export const MensajeForm = ({ handleNuevoMensaje }) => {
       };  
 
       const handleNuevoMensajeNew = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         handleNuevoMensaje(value);
         setValue(" ");  
       };

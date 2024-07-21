@@ -32,7 +32,7 @@ const MOOK_MENSAJES = [
 const [mensajeAnterior, mensajeChatNuevo] = useState(MOOK_MENSAJES)
 
 const handleNuevoMsj = (textoMensaje) => {
-    e.preventDefault()
+    
     mensajeChatNuevo ([...mensajeAnterior, { 
         author: 'yo',
         text: textoMensaje,
@@ -48,7 +48,7 @@ const handleNuevoMsj = (textoMensaje) => {
 return (
     <>
         <ChatHeaderInfo />
-        <ListaMensajes mensajesChat={MOOK_MENSAJES}/>
+        <ListaMensajes mensajesChat={mensajeAnterior}/>
         <MensajeForm handleNuevoMensaje={handleNuevoMsj} />
     </>
 )
