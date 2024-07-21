@@ -3,17 +3,21 @@ import './MensajeForm.css'
 
 
 
-export const MensajeForm = ({handleNuevoMensajeNew}) => {
+export const MensajeForm = ({ handleNuevoMensaje }) => {
     const [value, setValue] = useState(' ')
-    const [mensaje, setMensaje] = useState(' ')
 
     const handleChange = (event) => {
         setValue(event.target.value);
       };  
+
+      const handleNuevoMensajeNew = (e) => {
+        e.preventDefault();
+        handleNuevoMensaje(value);
+        setValue(" ");  
+      };
       
-      const handleNuevoMensaje = (event) => {
-        handleNuevoMensajeNew(value)
-      };  
+      
+      
       
     
 /* cuando el usuario escribe por ejemplo hola, el onChange lo captura y se produce
@@ -21,7 +25,7 @@ una funcion (handleChange), la cual es aquella q permite que el value se modifiq
 setValue.*/
 
     return (   /*onSubmit={NuevoMensaje}*/
-        <form className='message-section'   onSubmit={handleNuevoMensaje} >
+        <form className='message-section'   onSubmit={handleNuevoMensajeNew} >
             <button className='icon_input'><i class="bi bi-plus"></i></button>
             <input type="text" className='message-input' placeholder="Type a message..." onChange={handleChange} value={value}/>
                 {

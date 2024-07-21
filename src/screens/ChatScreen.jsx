@@ -29,20 +29,18 @@ const MOOK_MENSAJES = [
     }
 ]
 
-const [mensajeAnterior, mensajeNuevo] = useState('MOOK_MENSAJES')
+const [mensajeAnterior, mensajeChatNuevo] = useState(MOOK_MENSAJES)
 
-const handleNuevoMensaje = (nuevoMensaje) => {
+const handleNuevoMsj = (textoMensaje) => {
     e.preventDefault()
-    setMensajes([...mensajes, { 
-        id: mensajes.length + 1, 
-        texto: nuevoMsj, 
-        autor: "yo", 
-        estado: "entregado", 
-        dia: "hoy", 
-        hora: new Date().toLocaleTimeString() 
+    mensajeChatNuevo ([...mensajeAnterior, { 
+        author: 'yo',
+        text: textoMensaje,
+        estado: 'entregado' ,
+        day: 'hoy', 
+        hour: new Date().toLocaleTimeString(),
+        id: mensajeAnterior.length + 1
       }]);
-
-    mensajeNuevo ([...mensajeAnterior, nuevoMensaje])
 
 }
 
@@ -51,7 +49,7 @@ return (
     <>
         <ChatHeaderInfo />
         <ListaMensajes mensajesChat={MOOK_MENSAJES}/>
-        <MensajeForm handleNuevoMensajeNew={handleNuevoMensaje} />
+        <MensajeForm handleNuevoMensaje={handleNuevoMsj} />
     </>
 )
 }
