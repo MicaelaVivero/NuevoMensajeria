@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.contacto_screen{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 750px;
+    background-image: url(https://unageek.com/wp-content/uploads/2020/03/Fondo_pantalla_chat_WA_StarWars_UnaGeek_Claro.jpg);
+    margin: auto;
+
+    
+
+}

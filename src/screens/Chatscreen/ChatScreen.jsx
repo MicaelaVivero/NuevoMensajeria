@@ -46,10 +46,10 @@ const handleNuevoMsj = (textoMensaje) => {
 
 
 return (
-    <>
+    <div className='chat'>
         <ChatHeaderInfo />
-        <ListaMensajes mensajesChat={mensajeAnterior}/>
+        <ListaMensajes contactId={contactId} mensajesChat={mensajeAnterior}/>
         <MensajeForm handleNuevoMensaje={handleNuevoMsj} />
-    </>
+        </div>
 )
 }
