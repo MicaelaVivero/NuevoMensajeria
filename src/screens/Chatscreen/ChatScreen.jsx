@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../Components/Chat'
+import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../../Components/Chat'
 import './ChatScreen.css'
 export const ChatScreen = () => {
 const MOOK_MENSAJES = [

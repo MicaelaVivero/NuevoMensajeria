@@ -1,19 +1,23 @@
 import React from 'react'
-import { ChatScreen } from './screens/ChatScreen'
+import { ChatScreen } from './screens/ChatScreen/'
 
 
 
 function App() {
-
-
   return (
-      <div className='chat'>
-        <ChatScreen /> 
-      </div>
+    <div className='chat'>
+      <ChatScreen /> 
+    </div>
+)
+}
+/*
+  return (
+      <Routes>
+            <Route path='/' element={<ChatScreen/>} />
+            <Route path='/contacto' element={<Contacto/>}/>
+              
+         </Routes>
   )
 }
-
-/* el <Mensaje /> se importa from la carpeta Chat
-Por cada carpeta (Chat, Contacto, Historia) creo un dex.js*/
-
+  */
 export default App
