@@ -1,16 +1,11 @@
 import React from 'react'
-import { ChatScreen } from './screens/ChatScreen/'
+import {Route, Routes } from 'react-router-dom'
+import { ChatScreen, Contacto } from './screens'
 
 
 
 function App() {
-  return (
-    <div className='chat'>
-      <ChatScreen /> 
-    </div>
-)
-}
-/*
+  
   return (
       <Routes>
             <Route path='/' element={<ChatScreen/>} />
@@ -19,5 +14,4 @@ function App() {
          </Routes>
   )
 }
-  */
 export default App

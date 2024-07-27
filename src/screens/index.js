@@ -1,3 +1,3 @@
-import { ChatScreen } from './screens';
+import { ChatScreen, Contacto } from './screens';
 
-export { ChatScreen }
+export { ChatScreen, Contacto }
