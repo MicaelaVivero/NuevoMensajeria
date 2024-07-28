@@ -5,8 +5,10 @@ import './mensaje.css'
 
 export const Mensaje = ({mensaje}) => {
     const { author, text, estado, day, hour, id } = mensaje 
-    const { contactoID } = useParams();
-  const contacto = MOOK_CONTACTOS.find((contacto) => contacto.id === parseInt(contactoID));
+
+    const{contactId} = useParams()
+    const contacto = MOOK_CONTACTOS.find(contacto => contacto.id === Number(contactId))
+    
     return (
         <div className={`mensaje ${mensaje.autor}`} key={id}>
             <div className='burbuja'>

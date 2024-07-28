@@ -5,14 +5,11 @@ import { useParams } from 'react-router-dom'
 import { MOOK_CONTACTOS } from '../../../data'
 
 export const ListaMensajes = ({mensajesChat}) => {
-  const {contactId} = useParams();
-  console.log(contactId)
-  const contacto = MOOK_CONTACTOS.find(contacto => contacto.id === Number(contactId))
-  console.log(contacto)
+  const{contactId} = useParams()
   return (
     <div className='lista_mensaje'>
     {mensajesChat.map((mensajes, index) =>
-      <Mensaje mensaje={mensajes} key={index}/>
+      <Mensaje mensaje={mensajes} key = {index} />
     )}
     </div>
   )

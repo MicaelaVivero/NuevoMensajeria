@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../../Components/Chat'
 import './ChatScreen.css'
+import { MOOK_CONTACTOS } from '../../data'
 export const ChatScreen = () => {
+    /*
 const MOOK_MENSAJES = [
     {
         author: 'yo',
@@ -28,8 +30,8 @@ const MOOK_MENSAJES = [
         id: '3'
     }
 ]
-
-const [mensajeAnterior, mensajeChatNuevo] = useState(MOOK_MENSAJES)
+*/
+const [mensajeAnterior, mensajeChatNuevo] = useState(MOOK_CONTACTOS)
 
 const handleNuevoMsj = (textoMensaje) => {
     
@@ -48,8 +50,10 @@ const handleNuevoMsj = (textoMensaje) => {
 return (
     <div className='chat'>
         <ChatHeaderInfo />
-        <ListaMensajes contactId={contactId} mensajesChat={mensajeAnterior}/>
+        <ListaMensajes  mensajesChat={mensajeAnterior}/>
         <MensajeForm handleNuevoMensaje={handleNuevoMsj} />
         </div>
 )
 }
+
+/* <ListaMensajes  mensajesChat={mensajeAnterior}/>*/
