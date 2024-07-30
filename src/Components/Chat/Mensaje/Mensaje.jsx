@@ -6,8 +6,6 @@ import './mensaje.css'
 export const Mensaje = ({ mensaje }) => {
     const { author, text, estado, day, hour, id } = mensaje
 
-
-
     return (
         <div className={`mensaje ${author}`} key={id}>
             <div className='burbuja'>

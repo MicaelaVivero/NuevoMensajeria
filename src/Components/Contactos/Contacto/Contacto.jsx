@@ -6,7 +6,6 @@ import './Contacto.css'
 const Contacto = ({ contactochat }) => {
     const { nombre, thumbnail, ultima_conexion, id, mensajes } = contactochat
 
-
     return (
         <Link className='contenedor' to={`/chat/${id}`}>
             <div key={id} className="contacto-item">
