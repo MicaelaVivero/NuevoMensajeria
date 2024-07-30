@@ -1,56 +1,31 @@
 import React, { useState } from 'react'
 import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../../Components/Chat'
 import './ChatScreen.css'
-import { MOOK_CONTACTOS } from '../../data'
-export const ChatScreen = () => {
-    /*
-const MOOK_MENSAJES = [
-    {
-        author: 'yo',
-        text: 'Hola mi bro',
-        estado: 'visto' ,
-        day: 'hoy', 
-        hour: '13:15',
-        id: '1'
-    },
-    {
-        author: 'pepe',
-        text: 'Hola que tal',
-        estado: 'visto' ,
-        day: 'hoy', 
-        hour: '13:16',
-        id: '2'
-    },
-    {
-        author: 'yo',
-        text: 'todo piolaaaa',
-        estado: 'visto' ,
-        day: 'hoy', 
-        hour: '13:17',
-        id: '3'
-    }
-]
-*/
-const [mensajeAnterior, mensajeChatNuevo] = useState(MOOK_CONTACTOS)
 
-const handleNuevoMsj = (textoMensaje) => {
-    
-    mensajeChatNuevo ([...mensajeAnterior, { 
+
+export const ChatScreen = ({contactId}) => {
+const [mensajeAnterior, mensajeChatNuevo] = useState([])
+
+const handleNuevoMsj = (e) => {
+
+    const nuevoMensaje = {
         author: 'yo',
         text: textoMensaje,
         estado: 'entregado' ,
         day: 'hoy', 
         hour: new Date().toLocaleTimeString(),
         id: mensajeAnterior.length + 1
-      }]);
+    }
 
-}
+    mensajeChatNuevo ([...mensajeAnterior, nuevoMensaje])
+    }
+
 
 
 return (
     <div className='chat'>
         <ChatHeaderInfo />
-        <ListaMensajes  mensajesChat={mensajeAnterior}/>
+        <ListaMensajes  personaId = {contactId} mensajesChat={mensajeAnterior}/>
         <MensajeForm handleNuevoMensaje={handleNuevoMsj} />
         </div>
 )
