@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../../Components/Chat'
 import './ChatScreen.css'
-import { useEffect } from 'react'
 
 
 
-export const ChatScreen = ({ contactId }) => {
+export const ChatScreen = ({}) => {
+    
     const [mensajeAnterior, mensajeChatNuevo] = useState([])
 
-    
-      
+
 
     const handleNuevoMsj = (textoMensaje) => {
 

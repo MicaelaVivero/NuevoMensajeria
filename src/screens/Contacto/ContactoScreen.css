@@ -12,11 +12,8 @@ body{
 .contacto_screen{
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 750px;
+    justify-content: space-between;
+    height: 100vh;
     background-image: url(https://unageek.com/wp-content/uploads/2020/03/Fondo_pantalla_chat_WA_StarWars_UnaGeek_Claro.jpg);
     margin: auto;
-
-    
-
 }

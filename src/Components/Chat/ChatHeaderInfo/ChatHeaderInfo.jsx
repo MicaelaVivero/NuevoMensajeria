@@ -1,6 +1,7 @@
 import React from 'react'
 import './ChatHeaderInfo.css'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { obtenerContactos } from '../../../Fetching/FetchContactos'
@@ -29,7 +30,7 @@ export const ChatHeaderInfo = () => {
   return (
     <div className='info_header'>
       <div className='info_contacto'>
-        <div className='arrow'><i className="bi bi-arrow-left"></i></div>
+        <Link to={`/`}><div className='arrow'><i className="bi bi-arrow-left"></i></div></Link>
         <div className='img_contacto'><img src="./assets/chica.jpg" alt="" /></div>
         <div className='contacto'>{contacto.nombre}</div>
       </div>

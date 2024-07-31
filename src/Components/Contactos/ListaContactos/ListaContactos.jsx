@@ -11,9 +11,8 @@ export const ListaContactos = () => {
         () => {
             obtenerContactos()
                 .then(
-                    (data) => {
-                        console.log(data)
-                        setContactos(data)
+                    (contactos) => {
+                        setContactos(contactos)
 
                     })
     .catch((error) => {
