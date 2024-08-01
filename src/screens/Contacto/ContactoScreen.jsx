@@ -10,15 +10,17 @@ import FooterContactos from '../../Components/Contactos/FooterContactos/FooterCo
 const ContactoScreen = () => {
 
   
-return (
-  <div className='contacto_screen'>
-    <HeaderContactos />
-    <ListaContactos />
-    <FooterContactos />
-    
-  </div>
-)
-}
-/*contactos={obtenerContactos}*/
-
-export default ContactoScreen
+  return (
+    <div className='contacto_screen'>
+      <div>
+      <HeaderContactos />
+      <ListaContactos />
+      </div>
+      <FooterContactos />
+      
+    </div>
+  )
+  }
+  /*contactos={obtenerContactos}*/
+  
+  export default ContactoScreen

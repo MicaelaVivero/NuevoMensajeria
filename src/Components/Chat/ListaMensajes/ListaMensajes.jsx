@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './listamensajes.css'
 import { Mensaje } from '../Mensaje/Mensaje'
-import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { obtenerContactos } from '../../../Fetching/FetchContactos'
+import { useState } from 'react'
 
-export const ListaMensajes = (obtenerContactos) => {
+export const ListaMensajes = ({mensajesChat}) => {
+ 
   const { contactId } = useParams();
   const [mensaje, setMensaje] = useState([]);
+
+
   
 
   return (
