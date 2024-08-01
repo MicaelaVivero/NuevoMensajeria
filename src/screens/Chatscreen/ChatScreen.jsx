@@ -19,7 +19,8 @@ export const ChatScreen = ({ }) => {
                 mensajeChatNuevo(contactoMensaje)
 
             })
-    })
+        },
+        [])
     const handleNuevoMsj = (textoMensaje) => {
 
         mensajeChatNuevo (

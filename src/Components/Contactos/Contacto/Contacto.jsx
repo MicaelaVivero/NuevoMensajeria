@@ -8,7 +8,7 @@ const Contacto = ({ contactochat }) => {
 
     return (
         <>
-        <Link className='contenedor' to={`/chat/${id}`}>
+        <Link className='contenedor' to={`/chat/${id}`}> 
             <div key={id} className="contacto-item">
                 <div className='datos_contacto'>
                 <img src={thumbnail} alt={nombre} />
