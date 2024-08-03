@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Contacto from '../Contacto/Contacto'
 import './ListaContactos.css'
 import { obtenerContactos } from '../../../Fetching/FetchContactos'
+import BuscarContactos from '../BuscarContactos/BuscarContactos'
 
 
 export const ListaContactos = () => {
@@ -23,10 +24,10 @@ export const ListaContactos = () => {
 
     return (
         <div className='lista_contacto'>
-            {contactos.map((contacto) => (
-                <Contacto contactochat={contacto} key={contacto.id} />
-            ))}
+            <h1> Chats</h1>
+            <BuscarContactos/>
         </div>
+
     )
 }
 

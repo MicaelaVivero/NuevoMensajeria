@@ -1,19 +1,59 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
-body{
+body {
     background-color: antiquewhite;
 }
 
-.contacto_screen{
+.contacto_screen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
     background-image: url(https://unageek.com/wp-content/uploads/2020/03/Fondo_pantalla_chat_WA_StarWars_UnaGeek_Claro.jpg);
     margin: auto;
+}
+
+.header_lista {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .contacto_screen {
+        flex-direction: row;
+        justify-content: start;
+
+    }
+
+    .footer_app {
+        order: 1;
+    }
+
+    .header_lista {
+        order: 2;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .contacto_screen {
+        flex-direction: row;
+        justify-content: start;
+
+    }
+
+    .footer_app {
+        order: 1;
+    }
+
+    .header_lista {
+        order: 2;
+
+    }
+
 }

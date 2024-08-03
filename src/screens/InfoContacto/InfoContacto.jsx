@@ -1,12 +1,16 @@
 import React from 'react'
-
+import DataContacto from '../../Components/ContactoInfo/DataContacto/DataContacto'
+import HeaderContacto from '../../Components/ContactoInfo/HeaderContacto/HeaderContacto'
+import './InfoContacto.css'
 const InfoContacto = () => {
   return (
-    <div>
+    <div className='infocontacto_styles'>
         <HeaderContacto/>
-        <InfoContacto/>
+        <DataContacto/>
     </div>
   )
 }
+
+
 
 export default InfoContacto

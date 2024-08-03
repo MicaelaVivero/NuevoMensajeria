@@ -14,7 +14,7 @@ function App() {
       <Routes>
             <Route path='/' element={<ContactoScreen/>}/>
             <Route path='chat/:contactId' element={<ChatScreen/>}/>
-            <Route path='contactoInfo/::contactId' element={<InfoContacto/>}/>
+            <Route path='contactoInfo/:contactId' element={<InfoContacto/>}/>
               
       </Routes>
   )

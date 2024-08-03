@@ -29,9 +29,9 @@ export const ChatHeaderInfo = () => {
 
   return (
     <div className='info_header'>
-      <div className='info_contacto'>
+      <div className='info_contactoheader'>
         <Link to={`/`}><div className='arrow'><i className="bi bi-arrow-left"></i></div></Link>
-        <Link className='contenedor' to={`/contactoInfo/${contacto.id}`}> 
+        <Link className='contenedorheaderchat' to={`/contactoInfo/${contacto.id}`}> 
           <div className='img_contacto'><img src={contacto.thumbnail} alt="" /></div>
           <div className='contacto'>{contacto.nombre}</div>
         </Link>
@@ -39,7 +39,6 @@ export const ChatHeaderInfo = () => {
       <div className='secundary_icons'>
         <div><i className="bi bi-camera-video"></i></div>
         <div><i className="bi bi-telephone"></i></div>
-        <div><i className="bi bi-three-dots-vertical"></i></div>
       </div>
     </div>
   )

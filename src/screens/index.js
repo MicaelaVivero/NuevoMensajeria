@@ -1,4 +1,4 @@
-import  { ChatScreen }  from "./ChatScreen/ChatScreen";
+import { ChatScreen } from "./ChatScreen/ChatScreen.jsx";
 import ContactoScreen from "./Contacto/ContactoScreen";
 
 

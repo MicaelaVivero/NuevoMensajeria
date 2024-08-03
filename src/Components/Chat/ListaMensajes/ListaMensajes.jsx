@@ -14,7 +14,7 @@ export const ListaMensajes = ({mensajesChat}) => {
 
   return (
     <div className='lista_mensaje'>
-      {mensaje.map((mensaje, index) =>
+      {mensajesChat.map((mensaje, index) =>
         <Mensaje mensaje={mensaje} key={`${contactId}.${mensaje.id}.${index}`} />
       )}
     </div>

@@ -21,7 +21,7 @@ i{
     align-items: center;
     width: 100%;
     height: 8vh;
-    background-color: #27726B;
+    background-color: rgb(221, 221, 221);
     gap: 10px;
     padding: 0px 20px;
 }
@@ -36,7 +36,7 @@ i{
 .message-input{
     width: 80%;
     height: 2em;
-    background-color: #4ab6ab;
+    background-color: rgb(192, 190, 190);
     border: none;
     border-radius: 10px;
 }

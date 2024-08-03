@@ -10,7 +10,7 @@ export const Mensaje = ({ mensaje }) => {
         <div className={`mensaje ${author}`} key={id}>
             <div className='burbuja'>
                 <div className='info_persona'>
-                    <div className='contacto_persona'>{author}</div>
+                    <div className='contacto_persona'><strong>{author}</strong></div>
                     <div className='texto'>{text}</div>
                 </div>
                 <div className='datos_mensaje'>
