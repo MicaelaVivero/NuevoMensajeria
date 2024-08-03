@@ -4,8 +4,6 @@ import { useState } from 'react'
 import HeaderContactos from '../../Components/Contactos/HeaderContactos/HeaderContactos'
 import { ListaContactos } from '../../Components/Contactos/ListaContactos/ListaContactos'
 import FooterContactos from '../../Components/Contactos/FooterContactos/FooterContactos'
-import PantallaChat from '../../Components/Contactos/PantallaChat/PantallaChat'
-
 
 
 const ContactoScreen = () => {
@@ -23,10 +21,6 @@ const ContactoScreen = () => {
       <div className='footer_app'>
         <FooterContactos />
       </div>
-      <div>
-        
-      </div>
-      <PantallaChat/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { obtenerContactos } from '../../../Fetching/FetchContactos';
+import './BuscarContacto.css'
 
 const BuscarContactos = () => {
     const [listaContactos, setListaContactos] = useState([]);
@@ -31,7 +32,7 @@ const BuscarContactos = () => {
     }, [search]);
 
     return (
-        <div>
+        <div className='buscarcontacto_input'>
             <input
                 type="text"
                 placeholder='Buscar Contactos...'

@@ -4,7 +4,6 @@ import './ChatScreen.css';
 import { useParams } from 'react-router-dom';
 import FooterContactos from '../../Components/Contactos/FooterContactos/FooterContactos';
 
-// Simulando una API
 const fetchMensajes = async (data, contactId) => {
     const contacto = data.find(contacto => contacto.id === parseInt(contactId, 10));
     return contacto ? contacto.mensajes : [];
@@ -13,6 +12,7 @@ const fetchMensajes = async (data, contactId) => {
 const postNuevoMensaje = async (contactId, nuevoMensaje) => {
     const response = await fetch('/data.json');
     const data = await response.json();
+
     const contactoIndex = data.findIndex(contacto => contacto.id === parseInt(contactId, 10));
     if (contactoIndex !== -1) {
         data[contactoIndex].mensajes = [
@@ -20,7 +20,7 @@ const postNuevoMensaje = async (contactId, nuevoMensaje) => {
             nuevoMensaje
         ];
     }
-    // Simular la demora de la API
+    
     return new Promise((resolve) => setTimeout(resolve, 500));
 };
 
@@ -76,7 +76,7 @@ export const ChatScreen = () => {
             <div className='footer_visible'>
                 <FooterContactos />
             </div>
-            <div className='contenedor'>
+            <div className=''>
                 <div className='chat'>
                     <ChatHeaderInfo author={contactoNombre} />
                     <ListaMensajes mensajesChat={mensajesChat} />

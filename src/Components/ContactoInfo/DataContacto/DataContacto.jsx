@@ -25,7 +25,7 @@ const DataContacto = () => {
 
 
   return (
-    <div>
+    <div className='contenedor_contactos'>
       <div className='info_principal'>
         <img src={contacto.thumbnail} alt="" />
         <h1>{contacto.nombre}</h1>
@@ -47,7 +47,8 @@ const DataContacto = () => {
         <div className='contacto_estado'>
           <p> Estado: {contacto.ultima_conexion}</p>
         </div>
-
+        </div>
+      <div className='contenedor_botones'>
         <div className='contenedor_divs'>
           <div className='div1'>
             <div className='div1_titulo'>

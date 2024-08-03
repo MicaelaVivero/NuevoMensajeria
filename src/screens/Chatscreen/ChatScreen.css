@@ -17,10 +17,15 @@ body {
     
 }
 
+.contenedor{
+    width: 100%;
+}
+
 .chat {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .contacto_screen{
@@ -36,6 +41,16 @@ body {
     
     .footer_visible{
         display: block;
+    }
+
+    .contacto_screen{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .chat{
+        width: 100vh;
     }
 
 }
